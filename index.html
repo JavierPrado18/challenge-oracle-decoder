@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>Encriptador</title>
+</head>
+<body>
+    <main>
+        <section class="input-container">
+            <h1><img src="./assets/logo.svg" alt="logo"></h1>
+            <div class="message-container">
+                <textarea id="inputMessage" placeholder="Ingrese el texto aquí"></textarea>
+                
+                <p>
+                    <img src="./assets/bi_exclamation-circle-fill.svg" alt="">
+                    Solo letras ninusculas y sin acentos
+                </p>
+                <div class="buttons-section" >
+                    
+                    <button class="encriptar-button" id="encript">Encriptar</button>
+                    <button class="desencriptar-button" id="decript">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section class="output-container">
+            
+            <div class="info-message">
+                <div class="img-container" id="messageNone">
+                    <img src="./assets/Muñeco.png" alt="">
+                    <h3>Ningún mensaje encontrado</h3>
+                    <p>Ingrese el texto que desees encriptar o desencriptar</p>
+                            
+                </div>
+                <div id="responseContainer">
+                    <p id="responseMessage"></p>
+                    <span id="tooltip" class="tooltip">texto copiado</span>
+                    <button id="copyButton">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/encryption.js" ></script>
+</body>
+</html>
